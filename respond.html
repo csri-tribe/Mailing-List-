@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Testing</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+    <a class="navbar-brand mr-1" href="index.html">CSRI</a>
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navbar Search -->
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Navbar -->
+    <ul class="navbar-nav ml-auto ml-md-0">
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="badge badge-danger">9+</span>
+          <i class="fas fa-bell fa-fw"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+          <a class="dropdown-item" href="#">Alert Message: Hello....</a>
+          <a class="dropdown-item" href="#">Alert Message: Smith...</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Clear All</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <!-- <span class="badge badge-danger">7</span> -->
+          <i class="fas fa-envelope fa-fw"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user-circle fa-fw"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+          <a class="dropdown-item" href="#">Settings</a>
+          <a class="dropdown-item" href="#">Activity Log</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+        </div>
+      </li>
+    </ul>
+
+  </nav>
+
+  <div id="wrapper">
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Dashboard</a>
+          </li>
+          <li class="breadcrumb-item active">Overview</li>
+        </ol>
+
+        <div class="row container-limited">
+            <div class="col-md-12">
+                <h4> Maturity Test for (Organisation Name)</h4>
+                <h6> Security Control Assessment of (Organisation Name)- RESPOND PHASE All fields marked * MUST be completed</h6>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">1.Has a response plan been created to be implemented in the event of system breach?*</label>
+                    <p><i>Incident Response Plan refers to a documented strategy and guideline that identifies and informs appropriate personnel of their relevant duties; defines the processes that must be taken at various stages once an incident has occurred; and the tooling that must be capable of proactively taking preventive action to keep the risk from spreading across the enterprise</i></p>
+
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">2.Is your response planning adequate? * </label>
+                    <p><i>Response plans can be more effective when they are documented, communicated to relevant internal and external stakeholders, and regularly updated.
+This can include incorporating specific scenarios in them that may be tested on a periodic basis, to allow you to review and update your response plans based on this testing.</i>
+</p>
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">3.	Is the response plan up to date and regularly tested?*</label>
+                    <p><i>Response plan should be updated with latest threats and comprehensive plans for defence, critical systems and key assets, internal contact list and security protocols.
+Testing the plan periodically is essential to ensure that it works effectively in real time scenarios without any problems</i>
+</p>
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+				<div class="form-group">
+                    <label for="formGroupExampleInput2">4.	Is there a standardised operating procedure (SOP) that is followed? *</label>
+                    <p><i> provide a precise sketch of the technical processes, checklists and forms to be followed by the incident response team. It can be used as an instructional tool and can be used to reduce errors. The procedures should be based on the plans and policies</i></p>
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">5.	Is there an incident response team with clearly defined roles and responsibilities? *</label>
+						<p><i>An incident response team is group of skilled professionals, within an organisation, assigned with specific roles and responsibilities. The team will perform activities such as identifying, analysing and responding immediately to an incident. An incident response team analyses information discusses observations and activities and shares important reports and communications across the company. Assigning specific roles to the members ensures timely response</i></p>
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+				<div class="form-group">
+                    <label for="formGroupExampleInput2">6.	Do the personnel have the required skills for responding to an event? * </label>
+                    <p><i>Incident handling requires specialised knowledge and experience in several technical areas and its requirement might vary depending on the risk.
+The members of the incident response team should have excellent technical skills, problem solving skills, critical thinking ability and good communication skills. This can lead to proper understanding of the target and responding appropriately to the incident</i>
+</p>
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+				<div class="form-group">
+                    <label for="formGroupExampleInput">7.	Is the information regarding an incident shared with the external stakeholders? *</label>
+					<p><i>The organisation must share the certain information regarding an incident with its external stakeholders such as ISP providers, software vendors, law enforcements etc. This proactive sharing can help in generating a threat alert to act immediately on being noticed and to seek expert advice on how to act effectively</i></p>
+				   <select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">8.	Does the policy include provisions for incident reporting?* </label>
+                    <p><i>The incident response team has the responsibility to report an incident to certain parties after it has been confirmed. The policies must include provision considering the reporting to what must be reported to whom, the medium and in which circumstance. Doing so ensures that individuals involved in the team take appropriate actions in responding to an event at the right time</i></p>
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">9.	Are there documents recording past occurrences of cybersecurity events? *</label>
+                    <p><i>Documentation on incident identification, analysis and management process should be carefully retained and securely stored.  These documents can be later used as a reference or guideline on how to approach a similar incident in future</i></p>
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+				<div class="form-group">
+                    <label for="formGroupExampleInput2">10.	Are lessons learned meeting held periodically after the occurrence of an incident?*</label>
+                    <p><i>Lessons learned meeting, usually held within a few days after the incident, involves the response team and other personnel reflecting on the threats, the incident, how it occurred, what was done to intervene it and how well the intervention worked.
+ These meetings help the team to adopt methods to respond to a future incident and update the policies and plans for incident response</i>
+</p>
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">11.	Is a follow – up report created after the occurrence? *</label>
+						<p><i>Creating a follow-up report for each incident is an important post-incident activity, which can be quite valuable for future use. The report provides a reference that can be used to assist in handling similar incidents. Follow-up reports should be kept for a period as specified in record retention policies</i></p>
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+				<div class="form-group">
+                    <label for="formGroupExampleInput2">12.	Is the incident response plan reviewed frequently? * </label>
+                    <p><i>The point of reviewing an incident response (IR) plan is to ensure that it still addresses the real risks that an enterprise faces. Thus, reviewing the plan at least annually will ensure that the strategies to be adopted are up to date and follow the lessons learned from past occurrences</i></p>
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+				<!--<div class="form-group">
+                    <label for="formGroupExampleInput">13.Do you investigate the notifications from the detection systems?*</label>
+                     <p><i>The point of reviewing an incident response (IR) plan is to ensure that it still addresses the real risks that an enterprise faces. Thus, reviewing the plan at least annually will ensure that the strategies to be adopted are up to date and follow the lessons learned from past occurrences</i></p>
+
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>-->
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">13.How well do you know what will be the impact of the incident?* </label>
+					<p><i>Knowing the impact of the incident is important to decide the way the situation should be handled. If the impact is known it becomes easier to decide the methods which should be undertaken to overcome the situation</i></p>
+                    <select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">14.Are there any forensics performed?*</label>
+					<p><i>Digital forensics is important for law enforcement and investigation. All the activities on a computer system leave a digital trace. These bits of evidences are crucial. They tell how the incident happened, who was responsible, how to respond and how to stop it from happening in future.</i></p>
+
+                    <select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+				<div class="form-group">
+                    <label for="formGroupExampleInput2">15.Incidents are categorized consistent with response plans. Do you agree?*</label>
+					<p><i>It is helpful to if the response plans are categorized with the incidents. It helps in reacting to the cyber issues. </i></p>
+
+                    <select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">16.What is the process established to receive, analyse and respond to vulnerabilities disclosed to the organization from internal and external sources?*</label>
+                                         <p><i>Vulnerability Management program is important as they help in discovering the assets in your estate, detect vulnerabilities. These help the security team to act and prioritized for threats</i></p>
+
+					 <select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+				<div class="form-group">
+                    <label for="formGroupExampleInput2">17.Do you collect data from the SIEM, IDPS, Network logs, and people in the organization?* </label>
+					<p><i>Collecting information from the SIEM, IDPS, Network logs and people because it helps in tracking down which information was leaked which lead to the cyber-attack. Keeping tracks of log can help in identifying malicious attacks. Log monitoring helps in identifying events which led to the cyber-attack</i></p>
+
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+				<div class="form-group">
+                    <label for="formGroupExampleInput">18.Any method implemented in the company to identify the scope of the event?*</label>
+                                        <p><i>If the scope of the incidents is known, it is helpful to identify to techniques to perform when a cyber issue has occurred</i></p>
+
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">19.	Is there any breach response team?* </label>
+                                        <p><i>Having a dedicated team, which is responsible for handling any cyber issue, is important. It is important because then it becomes easy to have all the information at one place as to whether there were any methods adopted by the company to handle cybercrime</i></p>
+
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">20.Is there any individual responsible for the overall implementation of the plan?*</label>
+                                        <p><i>This is important information, so that when a cybercrime occurs, we know where to get all the details and the information of the plans which were in place</i></p>
+
+					<select class="form-control" id="sel1" name="sellist1">
+						<option> Select </option>
+                        <option>Not implemented</option>
+                        <option>Requirement gathering</option>
+						<option>Initial implementation</option>
+                        <option>In development</option>
+						<option>In testing phase</option>
+                        <option>Fully implemented</option>
+                    </select>
+                </div>
+				
+				<a class="btn btn-primary" href="Results.html">Proceed to Testing</a>
+            </div>
+        </div>
+
+      </div>	
+      <!-- /.container-fluid -->
+
+      <!-- Sticky Footer -->
+      <footer class="sticky-footer w-100">
+        <div class="container container-fluid my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright © Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin.min.js"></script>
+
+  <!-- Demo scripts for this page-->
+  <script src="js/demo/datatables-demo.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script>
+  var speed = {
+  'trigger': '#speed-compare',
+  'target': '.modal_content .speedometer' };
+    $(function () {
+      $(speed.trigger).on('click', function () {
+        setTimeout(function () {
+          $(speed.target).each(function () {
+            $(this).addClass('play');
+          });
+        }, 1000);
+      });
+    });
+  </script>
+
+</body>
+
+</html>

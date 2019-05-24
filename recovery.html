@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Testing</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+      <a class="navbar-brand mr-1" href="index.html">CSRI</a>
+
+      <button
+        class="btn btn-link btn-sm text-white order-1 order-sm-0"
+        id="sidebarToggle"
+        href="#"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navbar Search -->
+      <form
+        class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"
+      >
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search for..."
+            aria-label="Search"
+            aria-describedby="basic-addon2"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Navbar -->
+      <ul class="navbar-nav ml-auto ml-md-0">
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="alertsDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="badge badge-danger">9+</span>
+            <i class="fas fa-bell fa-fw"></i>
+          </a>
+          <div
+            class="dropdown-menu dropdown-menu-right"
+            aria-labelledby="alertsDropdown"
+          >
+            <a class="dropdown-item" href="#">Alert Message: Hello....</a>
+            <a class="dropdown-item" href="#">Alert Message: Smith...</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Clear All</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="messagesDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <!-- <span class="badge badge-danger">7</span> -->
+            <i class="fas fa-envelope fa-fw"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown no-arrow">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="userDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-user-circle fa-fw"></i>
+          </a>
+          <div
+            class="dropdown-menu dropdown-menu-right"
+            aria-labelledby="userDropdown"
+          >
+            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Activity Log</a>
+            <div class="dropdown-divider"></div>
+            <a
+              class="dropdown-item"
+              href="#"
+              data-toggle="modal"
+              data-target="#logoutModal"
+              >Logout</a
+            >
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="wrapper">
+      <div id="content-wrapper">
+        <div class="container-fluid">
+          <!-- Breadcrumbs-->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Overview</li>
+          </ol>
+
+          <div class="row container-limited">
+            <div class="col-md-12">
+              <h4>Maturity Test for (Organisation Name)</h4>
+              <h6>
+                Security Control Assessment of (Organisation Name)- RECOVERY 
+                PHASE All fields marked * MUST be completed
+              </h6>
+              <!-- Question -1 -->
+              <div class="form-group">
+                <label for="formGroupExampleInput"
+                  >Are Roles and Responsibility Being Defined in the Organisation?*</label
+                >
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="customRadio1"
+                      name="customRadio"
+                      onclick="question1show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="customRadio1"
+                      >Yes</label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="customRadio2"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="question1hide()"
+                    />
+                    <label class="custom-control-label" for="customRadio2"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question1">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput1"
+                      >Is  Controls such as RCAI matrix is being used to define roles and responsibilities using a chat and this chat is defined by Accountability, Responsibility, Consulted and Informed.?
+                    </label>
+					<label for="formGroupExampleInput" ><i>This gives the foundation to Foster partnership and Identify opportunities. And in Cyber recovery frame work in speeds up recovery process and stakeholders are trained in their role.</i></label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 2 Starts -->
+              <div class="form-group">
+                <label for="formGroupExampleInput2"
+                  >Is there Reliable source of information for Organization Assets?*
+                </label>
+				<label for="formGroupExampleInput" ><i>The main goal of this control is creating a database of organization assets. This will Give the recovery team a clear view of assets that are affected by attacks.</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question2Yes"
+                      name="customRadio"
+                      onclick="question2show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question2Yes"
+                      >Yes</label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question2No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="question2hide()"
+                    />
+                    <label class="custom-control-label" for="question2No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question2">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2"
+                      >Are Controls of Reliable source of Information Assets implemented   through various software like (SolarWinds N-Central by Solaris winds. Fresh Service by Fresh works, DEVICE42)?*</label
+                    >
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- Question 2 Ends -->
+			  <!--Question 3 Starts -->
+                <div class="form-group">
+                <label for="formGroupExampleInput3"
+                  >Are assets being Prioritised?
+                </label>
+				<label for="formGroupExampleInput" ><i>The rating of assets with consideration of their reliability, impact of failure. Categorising this asset will help in the recovery process, as the recovery plan will give importance to the most prioritized assets.</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question3Yes"
+                      name="customRadio"
+                      onclick="question3show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question3Yes">Yes</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question3No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="question3hide()"
+                    />
+                    <label class="custom-control-label" for="question3No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question3">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput3"
+                      >Assets analysis carried out with the following 
+•	Mission and customer impact 
+•	Safety and environmental impact 
+•	Ability to isolate single-point-failures 
+•	Preventive maintenance (PM) history 
+•	Corrective maintenance (CM) history 
+•	Mean time between failures (MTBF) or “reliability” 
+                                               Probability of failure 
+           Spares lead time 
+•	Asset replacement value 
+•	Planned utilization rate 
+*</label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+			   <!--Question 3 Ends -->
+			   <!--Question 4 Starts -->
+                <div class="form-group">
+                <label for="formGroupExampleInput4"
+                  >Is There a map of Organization Dependencies?
+                </label>
+				<label for="formGroupExampleInput" ><i>The goal of organisation dependence is to define relationships between capacities required by roles and Organisations on the one hand, and services that realize them on the other hand.</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question4Yes"
+                      name="customRadio"
+                      onclick="question4show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question4Yes"
+                      >Yes</label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question4No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="question4hide()"
+                    />
+                    <label class="custom-control-label" for="question4No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question4">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput4"
+                      >•	Are Internal and External dependencies Identified?</label
+                    >
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+					</div>
+					<div class="form-group">
+					<label for="formGroupExampleInput5"
+                      >Is there an alert configured to detect any unauthorized or unsuccessful logins to administrative accounts? </label
+                    >
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+					</div>
+					<div class="form-group">
+					<label for="formGroupExampleInput6"
+                      >•	Does the analysis reflect the Information system (data dependency) and end point systems? </label
+                    >
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+					</div>
+					<div class="form-group">
+					<label for="formGroupExampleInput7"
+                      >•	business impact analysis ?</label
+                    >
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+					</div>
+					<div class="form-group">
+					<label for="formGroupExampleInput8"
+                      >Are The following Method used in Defining Dependencies analysis? 
+•	business impact analysis 
+•	service/operational level agreements  
+•	dependency maps 
+? </label
+                    >
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+					</div>
+                  </div>
+                </div>
+			   <!--Question 4 Ends -->
+			   <!--Question 5 Starts -->
+                <div class="form-group">
+                <label for="formGroupExampleInput9">Are Service Level Agreement being mapped out for third parities ?</label>
+				<label for="formGroupExampleInput" ><i>Organisation are increasing reliant on third party information technology service which includes: cloud Computing, Data backup, operating partners.  It is a drawn agreement between the service provider and its external and internal consumers Its entails documents that specifies what services the provider is compelled to meet. This can assist the organisation Recovery team in the event of a major cyber security attack.</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question5Yes"
+                      name="customRadio"
+                      onclick="question5show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question5Yes">Yes</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question5No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="question5hide()"
+                    />
+                    <label class="custom-control-label" for="question5No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question5">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput10">The following controls should be put in place when mapping out an SLA;    
+•	Documenting specific security Objectives in agreements with third parties 
+•	Measurement of cyber Security performance in third party agreements. 
+•	Monitoring of Compliance with security objectives in agreements with third parties  
+•	Cybersecurity Performance when selecting third parties  
+
+?</label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+			   <!--Question 5 Ends -->
+			   <!--Question 6 Starts -->
+			    <div class="form-group">
+                <label for="formGroupExampleInput11">IS there a backup level Agreement? ?
+                </label>
+				<label for="formGroupExampleInput" ><i>The aim in mapping out SLA for internal backup and recovery environment will entail all elements of infrastructure that can have precaution in the outstanding backup of recovery of critical business data .</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question6Yes"
+                      name="customRadio"
+                      onclick="question6show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question6Yes">Yes</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question6No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="question6hide()"
+                    />
+                    <label class="custom-control-label" for="question6No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput10">does it include 
+1.	San Network (fibber Channel, Iscsi) 
+2.	Backup severs (masters or Media Severs) 
+3.	Backup reporting Severs 
+4.	Client Backup Software 
+5.	Backup Client Priorities (Business Critical Nature of the Application Sever)  
+6.	San Network (fibber Channel, Iscsi) 
+7.	Ethernet Network (connections to Clients and Backup Severs) 
+8.	Offsite /Internal Media (Storage Locations: How fast can you retrieve tapes) 
+9.	Backup Libraries (Disk-based or Tape based)
+10.	Backup Operators  
+11.	Data (Centre Environmental E.g  power supply’s , cabling and environment
+12.	control stations) 
+13.	Offsite /Internal Media (Storage Locations: How fast can you retrieve tapes) 
+
+</label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+			  <!--Question 6 Ends -->
+        
+        <!--Question 7 Starts -->
+                <div class="form-group">
+                <label for="formGroupExampleInput9">Do you have a recovery Metrics ?</label>
+				<label for="formGroupExampleInput" ><i>To ensure Delivering of all agreements in the SLA the metrics determines the responsibilities of infrastructures and IT teams Operation in the Level Agreements .</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question7Yes"
+                      name="customRadio"
+                      onclick="question7show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question5Yes">Yes</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question5No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="guestion7()"
+            />
+                    <label class="custom-control-label" for="question7No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question7">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput10">Groups that needs to be supported as part of the overall back and recovery Environment e.g.  (Windows and Unix team, Operations and Implementation Teams, Application and Database Teams, Facilities Team and Outside Vendors were applicable)
+
+
+
+?</label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+			   <!--Question 7 Ends -->
+        <!--Question 8 Starts -->
+                <div class="form-group">
+                <label for="formGroupExampleInput9">Is the Personnel to carry out recovery plan Identified  ?</label>
+				<label for="formGroupExampleInput" ><i>TTo be able to carry out effectively a recovery plan, criteria and associated plan need to be identified by the appropriate recovery personnel.  theses personnel must understand their roles and responsibility .</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question8Yes"
+                      name="customRadio"
+                      onclick="question8show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question5Yes">Yes</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question5No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="guestion8()"
+            />
+                    <label class="custom-control-label" for="question7No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question8">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput10">Recovery plan personnel roles must categories as follows 
+Management 
+Recovery Coordinator: 
+ Business Analysist: 
+Infrastructure Team:
+•	Servers/Storage/Databases 
+•	 Networks/Telecom 
+•	 IT Applications 
+
+
+
+
+?</label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+			   <!--Question 8 Ends -->
+        
+         <!--Question 9 Starts -->
+                <div class="form-group">
+                <label for="formGroupExampleInput9">Are Specific recovery details and procedures mapped out? </label>
+				<label for="formGroupExampleInput" ><i>Specific recovery Details should account for both technical and Nod technical procedures   .</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question8Yes"
+                      name="customRadio"
+                      onclick="question9show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question5Yes">Yes</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question5No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="guestion9()"
+            />
+                    <label class="custom-control-label" for="question9No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question8">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput10">Technical Recovery Procedures should include 
+      I.Restoring system from clean backups 
+    II.Replacing Compromised files with clean Versions 
+  III.Installing patches 
+  IV.Remediating software misconfiguration
+
+
+
+
+?</label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+			   <!--Question 9 Ends -->
+         
+          <!--Question 10 Starts -->
+                <div class="form-group">
+                <label for="formGroupExampleInput9">Is there Out of band communications implemented ? </label>
+				<label for="formGroupExampleInput" ><i>Identifying out band communication in communicating with critical business including internal and external IT security stakeholder. during recovery process without using the existing system which can be compromised   .</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question8Yes"
+                      name="customRadio"
+                      onclick="question10show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question5Yes">Yes</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question5No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="guestion10()"
+            />
+                    <label class="custom-control-label" for="question10No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question10">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput10">Are protocols such as FTP and TCP being used in such communications ?</label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+			   <!--Question 10 Ends -->
+         
+         
+          <!--Question 11 Starts -->
+          
+                <div class="form-group">
+                <label for="formGroupExampleInput9">Is there Continuous Improvement implemented after the recovery Process  </label>
+				<label for="formGroupExampleInput" ><i>The plans policies and Procedures Created for recovery should be continually improved by Incorporating lesson Learned during recovery efforts   .</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question8Yes"
+                      name="customRadio"
+                      onclick="question11show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question5Yes">Yes</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question5No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="guestion11()"
+            />
+                    <label class="custom-control-label" for="question11No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question11">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput10">The Security team should follow 
+
+Discovery: In this phase the recovery team disuses things that can be in proved through the recovery process such as communication or any technical or non-technical process.  It is very important to obtain many viewpoints form team. This allows the team to see an issue more holistically
+
+Validation Phase: This allows the test the suggestion from the Discovery phase and see if it can be implemented  
+
+Integration Phase: A lesson can be adapted or applied to the organisation during this phase.
+
+Assessment Phase: phase the team determines whether the lesson was successfully integrated into the work. If the new lesson was only partially successful, there’s an opportunity to send it back to the prior step and revise it, before moving it to get revaluated. If the lesson is successfully implemented, the team considers it “learned” and it gets recorded in a repository that everyone has access to so others can refer to it when they face a similar experience.
+
+
+
+
+?</label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+			   <!--Question 11 Ends -->
+         
+         
+         
+         
+           <!--Question 12 Starts -->
+                <div class="form-group">
+                <label for="formGroupExampleInput9">Is there Requirements  to Validating Recovery Capabilities? </label>
+				<label for="formGroupExampleInput" ><i>   .</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question8Yes"
+                      name="customRadio"
+                      onclick="question12show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question5Yes">Yes</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question5No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="guestion12()"
+            />
+                    <label class="custom-control-label" for="question12No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question12">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput10">The Requirements must include the following controls 
+Are backups Encrypted at rest as well as in transit? 
+Is there an established Recovery time objective and a Recovery point objective? 
+How long will it take to recovery from an attack?  
+Doe backup performance comply with any compliance need, client driven compliance or service requirements. 
+ 
+Where us data being hosted  
+Verifying data been backed is free form vulnerability and corruption  
+Aware of data replication, duplication and Redundancy  
+Backup strategy documented  
+Testing strategy on a regular basis  
+
+
+
+
+
+
+?</label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+			   <!--Question 12 Ends -->
+         
+          <!--Question 13 Starts -->
+                <div class="form-group">
+                <label for="formGroupExampleInput9">IS there Defined Effective Cyber attack Playbook  ? </label>
+				<label for="formGroupExampleInput" ><i>In case of a cyber event, such information becomes more important and thus the process and procedures have to be clearly presented in an actionable way to restore business functions efficiently. The playback book is a method to output the required recovery tasks and procedures: that would provide appropriate activities and milestones for each component systems of an organization.   .</i></label>
+                <div class="radio-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question8Yes"
+                      name="customRadio"
+                      onclick="question13show()"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="question5Yes">Yes</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="question5No"
+                      name="customRadio"
+                      class="custom-control-input"
+                      onclick="guestion13()"
+            />
+                    <label class="custom-control-label" for="question9No"
+                      >No</label
+                    >
+                  </div>
+                </div>
+                <div class="userYes offset-1" id="question8">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput10">CYber Recovery play book should include :
+                    Initial tactical recovery phase covers execution of activities developed in the planning stage for cyber-event recovery.
+                    Strategic phase concentrates on long term continuous improvement of capacity of organizational risk management process based on previous recovery activities. Minimizing the front of possible cyber- attack is considered
+
+
+
+
+?</label>
+                    <select class="form-control" id="sel1" name="sellist1">
+                      <option>Select </option>
+                      <option>Not implemented</option>
+                      <option>Requirement Gathering</option>
+                      <option>Initial Implementation Phase</option>
+                      <option>In Development Phase</option>
+                      <option>In Testing Phase</option>
+                      <option>Fully Implemented</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+			   <!--Question 13 Ends -->
+        
+        
+        
+        
+			  
+			  </div>
+			   
+              <a class="btn btn-primary" href="Results.html"
+                >Submit</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer w-100">
+          <div class="container container-fluid my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © Your Website 2019</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- /.content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function question1show() {
+        document.getElementById("question1").style.display = "block";
+      }
+      function question1hide() {
+        document.getElementById("question1").style.display = "none";
+      }
+
+      /* Question 2 functions starts  */
+      function question2show() {
+        document.getElementById("question2").style.display = "block";
+      }
+      function question2hide() {
+        document.getElementById("question2").style.display = "none";
+      }
+      /* Question 2 functions end  */
+
+		/* Question 3 functions starts  */
+      function question3show() {
+        document.getElementById("question3").style.display = "block";
+      }
+      function question3hide() {
+        document.getElementById("question3").style.display = "none";
+      }
+      /* Question 3 functions end  */
+	  /* Question 4 functions starts  */
+      function question4show() {
+        document.getElementById("question4").style.display = "block";
+      }
+      function question4hide() {
+        document.getElementById("question4").style.display = "none";
+      }
+      /* Question 4 functions end  */
+	  /* Question 5 functions starts  */
+      function question5show() {
+        document.getElementById("question5").style.display = "block";
+      }
+      function question5hide() {
+        document.getElementById("question5").style.display = "none";
+      }
+      /* Question 5 functions end  */
+	  /* Question 6 functions starts  */
+      function question6show() {
+        document.getElementById("question6").style.display = "block";
+      }
+      function question6hide() {
+        document.getElementById("question6").style.display = "none";
+      }
+      /* Question 6 functions end  */
+      
+      /* Question 7 functions starts  */
+      function question7show() {
+        document.getElementById("question7").style.display = "block";
+      }
+      function question7hide() {
+        document.getElementById("question7").style.display = "none";
+      }
+      
+      
+     /* Question 7 functions end  */
+      
+      /* Question 8 functions starts  */
+      function question8show() {
+        document.getElementById("question8").style.display = "block";
+      }
+      function question8hide() {
+        document.getElementById("question8").style.display = "none";
+      }
+      /* Question 8 functions end  */
+      /* Question 9 functions starts  */
+      function question9show() {
+        document.getElementById("question9").style.display = "block";
+      }
+      function question9hide() {
+        document.getElementById("question9").style.display = "none";
+      }
+      /* Question 9 functions end  */
+      
+      /* Question 10 functions starts  */
+      function question10show() {
+        document.getElementById("question10").style.display = "block";
+      }
+      function question10hide() {
+        document.getElementById("question10").style.display = "none";
+      }
+      /* Question 10 functions end  */
+      
+      /* Question 11 functions starts  */
+      function question11show() {
+        document.getElementById("question11").style.display = "block";
+      }
+      function question11hide() {
+        document.getElementById("question11").style.display = "none";
+      }
+      /* Question 11 functions end  */
+      
+      /* Question 12 functions starts  */
+      function question12show() {
+        document.getElementById("question12").style.display = "block";
+      }
+      function question12hide() {
+        document.getElementById("question12").style.display = "none";
+      }
+      /* Question 12 functions end  */
+      
+      /* Question 13 functions starts  */
+      function question13show() {
+        document.getElementById("question13").style.display = "block";
+      }
+      function question6hide() {
+        document.getElementById("question13").style.display = "none";
+      }
+      
+      
+      /* Question 13 functions end  */
+      
+      
+      
+      
+      
+
+    </script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="js/demo/datatables-demo.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script>
+      var speed = {
+        trigger: "#speed-compare",
+        target: ".modal_content .speedometer"
+      };
+      $(function() {
+        $(speed.trigger).on("click", function() {
+          setTimeout(function() {
+            $(speed.target).each(function() {
+              $(this).addClass("play");
+            });
+          }, 1000);
+        });
+      });
+    </script>
+  </body>
+</html>
